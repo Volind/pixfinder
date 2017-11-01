@@ -1,0 +1,55 @@
+<section class="advanced-settings">
+    <ul class="advanced-settings__list">
+        <li class="advanced-settings__item">
+          <label>
+            <input type="checkbox" 
+                   class="advanced-settings__input advanced-settings__input--checkbox" 
+                   [(ngModel)]="filter.showImageTags" 
+                   (ngModelChange)="refreshCount()">
+            Show image tags
+          </label>
+        </li>
+        <li class="advanced-settings__item">
+          <label>
+            <input type="checkbox" 
+                   class="advanced-settings__input advanced-settings__input--checkbox" 
+                   [(ngModel)]="filter.showPictureTags" 
+                   (ngModelChange)="refreshCount()">
+            Show picture tags
+          </label>
+        </li>
+        <li class="advanced-settings__item">
+          <label>
+              <input type="checkbox" 
+                     class="advanced-settings__input advanced-settings__input--checkbox" 
+                     [(ngModel)]="filter.showCSSImages" 
+                     (ngModelChange)="refreshCount()">
+              Show background images
+          </label>
+        </li>
+      </ul>
+      <ul class="advanced-settings__list">
+        <li class="advanced-settings__item">
+          <label>
+            <input type="number"
+                   min="0" 
+                   step="1"
+                   class="advanced-settings__input advanced-settings__input--number" 
+                   [(ngModel)]="filter.width" 
+                   (ngModelChange)="refreshCount()">
+              Min width
+          </label>
+        </li>
+        <li class="advanced-settings__item">
+          <label>
+            <input type="number" 
+                   min="0" 
+                   step="1"
+                   class="advanced-settings__input advanced-settings__input--number" 
+                   [(ngModel)]="filter.height" 
+                   (ngModelChange)="refreshCount()">
+            Min height
+          </label>
+        </li>
+      </ul>
+</section>

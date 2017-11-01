@@ -1,0 +1,23 @@
+.advanced-settings {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.advanced-settings__list {
+    list-style: none;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+.advanced-settings__item {
+    list-style: none;
+}
+
+.advanced-settings__input--number {
+    width: 3rem;
+}
+
+.advanced-settings__input--checkbox {
+    vertical-align: middle;
+}

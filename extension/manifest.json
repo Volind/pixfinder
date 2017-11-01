@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Pixfinder",
+    "description": "This extension helps user to find out number of images on a page.",
+    "version": "0.0.1",
+  
+    "browser_action": {
+      "default_icon": "pixfinder.png",
+      "default_popup": "index.html",
+      "default_title": "Pixfinder"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "permissions": [
+      "activeTab"
+    ]
+  }

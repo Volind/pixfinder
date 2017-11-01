@@ -1,0 +1,6 @@
+<section class="pix-counter">
+    <div class="pix-counter__header">Number of pictures on a page:</div>
+    <image-counter class="pix-counter__number" [count]="counter"></image-counter>
+    <app-settings class="pix-counter__settings" [filter]="filter" (filterChange)="filterChange($event)"></app-settings>
+</section>
+
